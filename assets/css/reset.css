@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s ease;
+}
+*, *::before, *::after { box-sizing: border-box; }
+
+/**
+ * შრიფტის ზომა ,
+ */
+
+html { font-family: var(--ff-inter); }
+
+/**
+ * ყველა ფერი
+ */
+
+h1, h2, h3, h4, h5, h6 { color: var(--white); }
+
+/**
+ * ვამატებ ფონს და ფერს
+ * ვაუმჯობესებ ტექტის კონსტრაქტულობას
+ */
+
+body {
+  background: var(--rich-black-fogra-29);
+  color: var(--off-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+/**
+ * სურათები იყოს როგორც დეფაულთი საწყისი 
+ */
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  object-fit: cover;
+}
+
+/**
+ * წაიშალის დეფაულთი
+ */
+
+input, button, select {
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/**
+ * დაემატოს ღილაკი დეფაულტი
+ */
+
+button {
+  color: var(--off-white);
+  cursor: pointer;
+}
+
+/**
+ * წაიშალოს ლისტის ითემი მარკერით 
+ */
+
+li { list-style: none; }
+
+/**
+ * შეიჩვალოს ლინკი დეფაულტით
+ */
+
+a {
+  text-decoration: none;
+  display: block;
+  color: var(--off-white);
+}
+
+/**
+ *  სქროლის დეფაულთიდან სმოთზე შეცვლა
+ */
+
+::-webkit-scrollbar {
+  background: transparent;
+  border-left: 1px solid var(--oxford-blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--light-azure);
+  border-radius: 5em;
+  border: 3px solid var(--rich-black-fogra-29);
+}
